@@ -30,6 +30,14 @@ class LongPressGestureViewController: UIViewController {
         squareView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         squareView.widthAnchor.constraint(equalToConstant: 200).isActive = true
         squareView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress(_:)))
+        squareView.addGestureRecognizer(longPressGesture)
+    }
+    
+    @objc func longPress(_ gesture: UILongPressGestureRecognizer){
+        print("gesture")
+        squareView.backgroundColor = .cyan
     }
 
 }

@@ -48,15 +48,24 @@ class PinchGestureViewController: UIViewController {
         imageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
 
-        imageView.addGestureRecognizer(pinchGesture)
+        let gesturePinch = UIPinchGestureRecognizer(target: self, action: #selector(pinchGesture(_:)))
+        squareView.addGestureRecognizer(pinchGesture)
+        
+        imageView.addGestureRecognizer(gesturePinch)
     }
     
     @objc func pinched(_ pinched: UIPinchGestureRecognizer){
         if pinched.state == .ended{
-//            squareView.transform = CGAffineTransform.identity
+            squareView.transform = CGAffineTransform.identity
+        }else{
+            squareView.transform = CGAffineTransform(scaleX: pinched.scale , y: pinched.scale)
+        }
+    }
+    
+    @objc func pinchGesture(_ pinched: UIPinchGestureRecognizer){
+        if pinched.state == .ended{
             imageView.transform = CGAffineTransform.identity
         }else{
-//            squareView.transform = CGAffineTransform(scaleX: pinched.scale , y: pinched.scale)
             imageView.transform = CGAffineTransform(scaleX: pinched.scale , y: pinched.scale)
             print(pinched.scale)
         }
