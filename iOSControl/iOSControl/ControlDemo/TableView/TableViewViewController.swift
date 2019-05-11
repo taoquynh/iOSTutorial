@@ -32,7 +32,7 @@ class TableViewViewController: UIViewController {
         //bỏ cell footer
         tableView.tableFooterView = UIView()
         // bỏ separator
-        tableView.separatorStyle = .none
+//        tableView.separatorStyle = .none
     }
     
     func setupData(){
