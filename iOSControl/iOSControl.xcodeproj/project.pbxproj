@@ -71,6 +71,7 @@
 		A9982488226AAD7B00E9632B /* ListModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9982486226AAD7B00E9632B /* ListModelTableViewCell.swift */; };
 		A9982489226AAD7B00E9632B /* ListModelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9982487226AAD7B00E9632B /* ListModelTableViewCell.xib */; };
 		A998248B226ABB3100E9632B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A998248A226ABB3100E9632B /* Post.swift */; };
+		A9EE66C523548E2A00A3C044 /* SegmentCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EE66C423548E2A00A3C044 /* SegmentCode.swift */; };
 		AE9D0C6A224BA7B400614040 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9D0C68224BA7B400614040 /* DatePickerViewController.swift */; };
 		AE9D0C6B224BA7B400614040 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9D0C69224BA7B400614040 /* DatePickerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -142,6 +143,7 @@
 		A9982486226AAD7B00E9632B /* ListModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelTableViewCell.swift; sourceTree = "<group>"; };
 		A9982487226AAD7B00E9632B /* ListModelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListModelTableViewCell.xib; sourceTree = "<group>"; };
 		A998248A226ABB3100E9632B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A9EE66C423548E2A00A3C044 /* SegmentCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentCode.swift; sourceTree = "<group>"; };
 		AE9D0C68224BA7B400614040 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		AE9D0C69224BA7B400614040 /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,6 +227,7 @@
 			children = (
 				2935AD3822563B8400AC877E /* SegmentWithViewViewController.swift */,
 				2935AD3922563B8400AC877E /* SegmentWithViewViewController.xib */,
+				A9EE66C423548E2A00A3C044 /* SegmentCode.swift */,
 			);
 			path = SegmentWithView;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				292DEFAB224E4FE800C72B05 /* ConvertHelper.swift in Sources */,
 				29E2CD39226DE9160083E821 /* DelegateFirstViewController.swift in Sources */,
 				2935AD33225639AC00AC877E /* StepperViewController.swift in Sources */,
+				A9EE66C523548E2A00A3C044 /* SegmentCode.swift in Sources */,
 				2935AD3A22563B8400AC877E /* SegmentWithViewViewController.swift in Sources */,
 				A970009D2269D98700ABDFD0 /* Food.swift in Sources */,
 				A998248B226ABB3100E9632B /* Post.swift in Sources */,

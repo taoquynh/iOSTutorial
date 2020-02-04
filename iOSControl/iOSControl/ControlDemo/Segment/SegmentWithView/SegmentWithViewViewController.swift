@@ -16,7 +16,7 @@ class SegmentWithViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
         segment.selectedSegmentIndex = 0
         greenView.isHidden = false
         pinkView.isHidden = true

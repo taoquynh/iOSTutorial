@@ -10,7 +10,7 @@ import UIKit
 
 // B1: Tạo protocol
 protocol MyDelegate {
-    //B2: tạo một hàm bắt buộc (required - bắt hoặc optional - không bắt buộc, nếu không có thì hệ thống tự hiểu là bắt buộc
+    //B2: tạo một hàm bắt buộc (required - bắt buộc hoặc optional - không bắt buộc, nếu không có thì hệ thống tự hiểu là bắt buộc
     func backDelegate(text1: String, text2: String)
 }
 
@@ -20,7 +20,7 @@ class Delegate2ViewController: UIViewController {
     @IBOutlet weak var secondTextField: UITextField!
     @IBOutlet weak var backButton: UIButton!
     
-    // B3: khai báo một biến delegate kiểu dữ liệu của protocol
+    // B3: khai báo một biến delegate kiểu dữ liệu là một protocol
     var myDelegate: MyDelegate?
     
     override func viewDidLoad() {

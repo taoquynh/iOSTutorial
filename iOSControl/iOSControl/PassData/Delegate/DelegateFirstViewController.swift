@@ -23,7 +23,6 @@ class DelegateFirstViewController: UIViewController {
         
         // B5: sử dụng delegate
         delegate2.myDelegate = self
-        
         present(delegate2, animated: true, completion: nil)
     }
 }

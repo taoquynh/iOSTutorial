@@ -16,8 +16,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var checkImageView: UIImageView!
     
     // B1: Khai báo một closure
-    // B2: dòng 42
-    // B3: Trong cellForRow At Indexpath file TableViewController
+    // B2: dòng 39
+    // B3: Trong cellForRow At Indexpath file TableViewController.swift
     var checkAction: (() -> Void)?
     var truyenFoodName: ((String) -> Void)?
     
@@ -27,12 +27,6 @@ class TableViewCell: UITableViewCell {
                 photoImageView.image = UIImage(named: food.imageName)
                 titleLabel.text = food.name
                 descriptionLabel.text = food.description
-//                if food.isSelected{
-//                    checkImageView.image = UIImage(named: "checked")
-//                }else{
-//                    checkImageView.image = UIImage(named: "unchecked")
-//                }
-
                 // if else rut gon
                 checkImageView.image = UIImage(named: food.isSelected ? "checked" : "unchecked")
             }

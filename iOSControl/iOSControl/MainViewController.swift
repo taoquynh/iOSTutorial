@@ -101,7 +101,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             case "UIStepper":
                 navigationController?.pushViewController(StepperViewController(), animated: true)
             case "UISegment":
-                navigationController?.pushViewController(SegmentWithViewViewController(), animated: true)
+                navigationController?.pushViewController(SegmentCode(), animated: true)
             case "UISegmentWithViewController":
                 navigationController?.pushViewController(SegmentWithViewController(), animated: true)
             case "UITableView":

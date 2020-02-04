@@ -50,7 +50,6 @@ class PinchGestureViewController: UIViewController {
 
         let gesturePinch = UIPinchGestureRecognizer(target: self, action: #selector(pinchGesture(_:)))
         squareView.addGestureRecognizer(pinchGesture)
-        
         imageView.addGestureRecognizer(gesturePinch)
     }
     

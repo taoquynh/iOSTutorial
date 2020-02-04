@@ -17,7 +17,7 @@ class Notification1ViewController: UIViewController {
         
         title = "Noti 1"
         // đăng kí thông báo khi khởi tạo màn hình
-        NotificationCenter.default.addObserver(self, selector: #selector(notification(_:)), name: .notificationNamePost, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(notification(_:)), name: .noticicationNameBlog, object: nil)
     }
     
     @objc func notification(_ notification: Notification){

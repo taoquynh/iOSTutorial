@@ -16,7 +16,7 @@ class Notification2ViewController: UIViewController {
         super.viewDidLoad()
 
         title = "Noti 2"
-        // đăng kí thông báo khi khởi tạo màn hình
+        // đăng kí nhận thông báo khi khởi tạo màn hình
         NotificationCenter.default.addObserver(self, selector: #selector(notification(_:)), name: .notificationNamePost, object: nil)
     }
 
@@ -26,6 +26,7 @@ class Notification2ViewController: UIViewController {
             
             titleLabel.text = post.title
             feelLabel.text = post.feel
+            // push thông báo
         }
         
         print("Notification2ViewController")

@@ -31,21 +31,18 @@ class DatePickerViewController: UIViewController {
     }
 	
 	func setDatePicker() {
-        
 		// set kiểu cho datePicker
 		datePicker.datePickerMode = .date
 		// gán datePicker cho textField
 		dateTextField.inputView = datePicker
-		
-		// Set gio mặc định khi hiển thị
+		// Set ngày mặc định khi hiển thị
 		datePicker.setDate(Date(), animated: true)
 		
 		//  khởi tạo toolBar, toolBar.sizeToFit là các thành phần nằm trong nó tự dãn theo đúng kích thước width
 		let toolBar = UIToolbar()
         dateTextField.inputAccessoryView = toolBar
         toolBar.sizeToFit()
-		
-
+        
         dateLabel.text = "Date Label"
 		
         // khai báo các thành phần trong toolBar (button,label)
@@ -95,14 +92,14 @@ class DatePickerViewController: UIViewController {
 		dateTextField.text = ConvertHelper.stringFromDate(date: datePicker.date, format: "dd/MM/yyyy")
         timeTextField.becomeFirstResponder()
 	}
-    
+    @objc func cancelAction() {
+        self.view.endEditing(true)
+    }
     @objc func doneTimeAction() {
         timeTextField.text = ConvertHelper.stringFromDate(date: timePicker.date, format: "HH:mm")
         self.view.endEditing(true)
     }
 	
-	@objc func cancelAction() {
-		self.view.endEditing(true)
-	}
+
 
 }

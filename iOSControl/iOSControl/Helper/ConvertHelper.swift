@@ -12,9 +12,7 @@ class ConvertHelper {
     static func stringFromDate(date: Date, format: String) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
-        
         let string = formatter.string(from: date)
-        
         return string
     }
 }

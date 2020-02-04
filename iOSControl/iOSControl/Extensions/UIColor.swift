@@ -2,8 +2,8 @@
 //  UIColor.swift
 //  Noibai
 //
-//  Created by Hiếu Tào on 1/16/18.
-//  Copyright © 2018 Hiếu Tào. All rights reserved.
+//  Created by Tào Quỳnh on 4/22/19.
+//  Copyright © 2019 Tào Quỳnh. All rights reserved.
 //
 
 

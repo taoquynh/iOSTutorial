@@ -25,5 +25,6 @@ class Notification3ViewController: UIViewController {
         
         // B2: Push thông báo
         NotificationCenter.default.post(name: .notificationNamePost, object: post)
+        
     }
 }

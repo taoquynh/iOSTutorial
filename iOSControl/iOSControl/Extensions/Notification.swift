@@ -8,6 +8,7 @@
 
 import Foundation
 
-extension Notification.Name{
-   static let notificationNamePost = Notification.Name(rawValue: "Notification.post")
+extension Notification.Name {
+    static let notificationNamePost = Notification.Name(rawValue: "Notification.post")
+    static let noticicationNameBlog = Notification.Name(rawValue: "Notification.blog ")
 }

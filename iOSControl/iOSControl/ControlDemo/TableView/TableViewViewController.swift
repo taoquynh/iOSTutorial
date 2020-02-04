@@ -65,13 +65,6 @@ extension TableViewViewController: UITableViewDelegate, UITableViewDataSource{
         // B3: đăng kí dùng closure
         // dung closure la phai co weak self: [weak self]
         cell.checkAction = {[weak self] in
-            print("checkAction")
-//            if self.foods[indexPath.row].isSelected{
-//                self.foods[indexPath.row].isSelected = false
-//            }else{
-//                self.foods[indexPath.row].isSelected = true
-//            }
-            
             // check self co bi nil khong, neu khong bi nil thi gan self cho strongSelf
             guard let strongSelf = self else { return }
 
@@ -81,7 +74,8 @@ extension TableViewViewController: UITableViewDelegate, UITableViewDataSource{
         cell.truyenFoodName = { name in
             print(name)
         }
-        // bo select cell
+        
+        // bo chọn cell
 //        cell.selectionStyle = .none
         return cell
     }
