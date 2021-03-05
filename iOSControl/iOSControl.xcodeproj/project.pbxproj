@@ -271,11 +271,11 @@
 				293F66AD2172FA0E0098D203 /* GetureDemo */,
 				A998247C226AAAFE00E9632B /* PassData */,
 				293F66962172EAD10098D203 /* AppDelegate.swift */,
+				293F66A82172EBCB0098D203 /* MainViewController.swift */,
+				293F66A92172EBCB0098D203 /* MainViewController.xib */,
 				293F669D2172EAD30098D203 /* Assets.xcassets */,
 				293F669F2172EAD30098D203 /* LaunchScreen.storyboard */,
 				293F66A22172EAD30098D203 /* Info.plist */,
-				293F66A82172EBCB0098D203 /* MainViewController.swift */,
-				293F66A92172EBCB0098D203 /* MainViewController.xib */,
 			);
 			path = iOSControl;
 			sourceTree = "<group>";
@@ -283,15 +283,15 @@
 		293F66AC2172FA000098D203 /* ControlDemo */ = {
 			isa = PBXGroup;
 			children = (
-				29E2CD4E226DF9DE0083E821 /* CollectionView */,
-				A97000922269D42F00ABDFD0 /* TableView */,
-				2935AD3522563AE200AC877E /* Segment */,
-				2935AD302256397100AC877E /* UIStepper */,
-				2935AD2B2256326F00AC877E /* UISwitch */,
-				292DEFAC224E553500C72B05 /* PickerView */,
-				AE9D0C67224BA78700614040 /* DatePicker */,
-				29F1A159224904D80017E10B /* Button */,
 				293F66AE2172FA230098D203 /* TextField */,
+				29F1A159224904D80017E10B /* Button */,
+				AE9D0C67224BA78700614040 /* DatePicker */,
+				292DEFAC224E553500C72B05 /* PickerView */,
+				2935AD2B2256326F00AC877E /* UISwitch */,
+				2935AD302256397100AC877E /* UIStepper */,
+				2935AD3522563AE200AC877E /* Segment */,
+				A97000922269D42F00ABDFD0 /* TableView */,
+				29E2CD4E226DF9DE0083E821 /* CollectionView */,
 			);
 			path = ControlDemo;
 			sourceTree = "<group>";
@@ -299,12 +299,12 @@
 		293F66AD2172FA0E0098D203 /* GetureDemo */ = {
 			isa = PBXGroup;
 			children = (
-				296BD45C225E1DBF00844956 /* Long Press */,
-				296BD45B225E1DB800844956 /* Rotate */,
-				296BD45A225E1DAF00844956 /* Pan */,
-				296BD459225E1DA800844956 /* Pinch */,
-				296BD458225E1DA100844956 /* Swipe */,
 				296BD457225E1D9900844956 /* Tap */,
+				296BD458225E1DA100844956 /* Swipe */,
+				296BD459225E1DA800844956 /* Pinch */,
+				296BD45A225E1DAF00844956 /* Pan */,
+				296BD45B225E1DB800844956 /* Rotate */,
+				296BD45C225E1DBF00844956 /* Long Press */,
 			);
 			path = GetureDemo;
 			sourceTree = "<group>";
@@ -437,9 +437,9 @@
 		A998247C226AAAFE00E9632B /* PassData */ = {
 			isa = PBXGroup;
 			children = (
+				A998247D226AAB3800E9632B /* Closure */,
 				29E2CD3F226DE92E0083E821 /* Notification */,
 				29E2CD32226DE8A90083E821 /* Delegate */,
-				A998247D226AAB3800E9632B /* Closure */,
 			);
 			path = PassData;
 			sourceTree = "<group>";
@@ -739,6 +739,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z872JX6928;
 				INFOPLIST_FILE = iOSControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,6 +758,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z872JX6928;
 				INFOPLIST_FILE = iOSControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

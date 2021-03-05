@@ -16,9 +16,9 @@ class PickerViewViewController: UIViewController {
     // 3. Picker view
     
     var colors = [Color]()
+    
     let label: UILabel = {
         let label = UILabel()
-        
         label.text = "Chọn màu"
         label.frame = CGRect(x: 20, y: 100, width: 100, height: 40)
         label.textAlignment = NSTextAlignment.left
@@ -27,28 +27,33 @@ class PickerViewViewController: UIViewController {
     
     let colorTextField: UITextField = {
         let textField = UITextField()
-        
         textField.frame = CGRect(x: 20, y: 150, width: 200, height: 40)
         textField.placeholder = "Click here"
         textField.borderStyle = UITextField.BorderStyle.roundedRect
-        
         return textField
     }()
     
     let colorPickerView: UIPickerView = {
         let picker = UIPickerView()
-        
         return picker
     }()
     
-    let pickerLabel = UILabel()
+    let pickerLabel: UILabel = {
+        let label = UILabel()
+        label.text = ""
+        label.textAlignment = .center
+        label.frame = CGRect(x: 0, y: 0, width: 200, height: 40)
+        return label
+    }()
+    
+    var color: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupLayout()
-        setupToolBar()
         setupPicker()
+        setupToolBar()
         
         title = "Picker View"
         
@@ -60,7 +65,6 @@ class PickerViewViewController: UIViewController {
         let violetColor = Color(name: "American Violet", hex: "#4815AA")
         
         colors = [redColor, darkOrangeColor, yellowColor, greenColor, azureColor, violetColor, redColor, darkOrangeColor, yellowColor, greenColor, azureColor, violetColor]
-        print("colorPickerView \(address(o: colorPickerView))")
     }
     
     func setupLayout() {
@@ -78,6 +82,7 @@ class PickerViewViewController: UIViewController {
     func setupToolBar() {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
+        colorTextField.inputAccessoryView = toolBar
         
         let doneButton = UIBarButtonItem(title: "Chọn", style: .plain, target: self, action: #selector(doneAction))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: self, action: nil)
@@ -88,7 +93,6 @@ class PickerViewViewController: UIViewController {
     }
     
     @objc func doneAction() {
-        pickerLabel.text = "cba"
         self.view.endEditing(true)
     }
     
@@ -96,9 +100,6 @@ class PickerViewViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    func address<T: AnyObject>(o: T) -> Int {
-        return unsafeBitCast(o, to: Int.self)
-    }
 }
 
 extension PickerViewViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -133,13 +134,14 @@ extension PickerViewViewController: UIPickerViewDelegate, UIPickerViewDataSource
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView == colorPickerView {
             
-            print(colors[row].name)
+            color = colors[row].name
             label.textColor = UIColor(colors[row].hex)
+            pickerLabel.text = colors[row].name
         }
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 50
+        return 40
     }
     
     

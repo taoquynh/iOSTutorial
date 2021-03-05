@@ -23,8 +23,6 @@ class StepperViewController: UIViewController {
     
     @objc func changeAction() {
         title = String(stepper.value)
-        
-        
     }
 
 }

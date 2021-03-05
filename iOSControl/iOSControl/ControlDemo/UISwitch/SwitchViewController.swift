@@ -29,8 +29,6 @@ class SwitchViewController: UIViewController {
     }
 
     @IBAction func genderDidChange(_ sender: Any) {
-        
-        // eps kieu sender ve UISwitch
         if let genderSwitch = sender as? UISwitch {
             print("This is switch")
             print(genderSwitch.isOn)

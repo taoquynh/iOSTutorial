@@ -34,9 +34,6 @@ class Delegate2ViewController: UIViewController {
         myDelegate?.backDelegate(text1: firstTextField.text!, text2: secondTextField.text!)
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
 }
 
 

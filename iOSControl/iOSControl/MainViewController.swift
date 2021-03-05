@@ -12,10 +12,13 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    // Tạo dữ liệu cho sectionOne
     var sectionOne = ["UITextField", "UIButton", "UIDatePicker", "UIPickerView", "UISwitch", "UIStepper", "UISegment", "UISegmentWithViewController", "UITableView", "UICollectionView"]
     
+    // Tạo dữ liệu cho sectionTwo
     var sectionTwo = ["Tap Gestures", "Swipe Gestures", "Pinch Gestures", "Pan Gestures", "Rotate Gestures", "Long Press Gestures"]
     
+    // Tạo dữ liệu cho sectionThree
     var sectionThree = ["Closure", "Delegate", "Notification"]
     
     override func viewDidLoad() {
